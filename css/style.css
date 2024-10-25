@@ -74,6 +74,31 @@
     margin-left: 15px;
 }
 
+ .header .header-main .inner-bar{
+    display: none;
+}
+@media (max-width:768px){
+    .header-top{
+        font-size: 16px;
+    }
+    .header-main .inner-menu{
+        display: none;
+    }
+    .header-main .inner-social{
+        display: none;
+    }
+    .header .header-main .inner-bar{
+        display: block;
+        font-size: 24px;
+        color:var(--color-one);
+
+    }
+}
+@media (max-width:992px){
+    .header-main .inner-contact{
+        display: none;
+    }
+}
 /* end header */
 
 
@@ -192,6 +217,49 @@ background-color: #fff;
     font-weight: 600;
 
 }
+@media (max-width:992px){
+    .section-one .inner-content {
+        width: 100%;
+  order:2;
+    }
+    .section-one .inner-image {
+        width: 100%;
+        position: relative;
+        order: 1    ;
+    }
+    .section-one .inner-wrap {
+       flex-wrap: wrap;
+    
+    }
+    @media (max-width:768px){
+        .section-one .inner-content{
+            text-align: center;
+        }
+        .section-one .inner-content .inner-list .inner-item {
+            justify-content: center;
+        }
+        .section-one .inner-image .inner-sale{
+                right: 36px;
+                width: 80px;
+                height: 80px;
+                
+        }
+        .section-one .inner-image .inner-sale:nth-child(1) {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .section-one .inner-image .inner-sale:nth-child(2) {
+            font-size: 28px;
+    
+        
+        }
+        .section-one .inner-content .inner-title h1 {
+            font-size: 38px;
+
+        }
+    }
+
+}
 
 /* end section-one  */
 
@@ -271,5 +339,21 @@ padding: 30px;
     font-weight: 600;
     margin-bottom: 10px;
     text-decoration: line-through;
+}
+@media (max-width:992px){
+    .section-two .inner-wrap{
+        flex-wrap: wrap;
+    }
+    .section-two .inner-box{
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin-bottom: 30px;
+    }
+}
+@media (max-width:576px){
+    .section-two .inner-box{
+     aspect-ratio: 1/1;
+    }
+    
 }
 /* section two  */
